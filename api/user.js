@@ -5,6 +5,8 @@ module.exports = (req,res) => {
             {name: "Raj2" , location: "Earth"}
         ])
     } else {
+        const { name, location } = req.body;
 
+        res.send({status: "User Command"}, name, location)
     }
 }
