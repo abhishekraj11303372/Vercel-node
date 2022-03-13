@@ -7,8 +7,9 @@ module.exports = (req,res) => {
 
         ])
     } else {
-        const { name, location } = req.body;
+        const { state_name, party_name } = req.body;
+        // const { name, location } = req.body;
 
-        res.send({status: "User Command"}, name, location)
+        res.send({status: "User Command"}, state_name, party_name)
     }
 }
